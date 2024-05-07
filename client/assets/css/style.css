@@ -36,6 +36,7 @@ a {
   border-right: 1px solid gray;
   padding: 0 14px;
   position: fixed;
+  z-index: 2;
 }
 .left-side-menu .logo {
   width: 190px !important;
@@ -259,6 +260,66 @@ transition: 0.1s linear;
 .searchModal .searched-account .fa-x {
   font-weight: bold;
   font-size: 15px;
+}
+.menuModal {
+  border-radius: 20px;
+  background-color: #262626;
+  color: #fff;
+  font-size: 14px;
+  width: 260px;
+  padding: 10px 9px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 80px 12px;
+  display: none;
+}
+.menuModal span {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.menuModal #logOut {
+  color: #fff;
+  text-decoration: none;
+}
+.menuModal #switch-accounts {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.menuModal a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.menuModal a i {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.menuModal a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.menuModal a:hover,
+#logOut:hover,
+#switch-accounts:hover {
+  background-color: #313131;
+  width: 243px;
+  height: 50px;
+  border-radius: 10px;
+  transition: 0.2s linear;
 }
 
 

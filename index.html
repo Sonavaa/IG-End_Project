@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./client/assets/css/bootstrap.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -105,14 +104,12 @@
           <p>Threads</p>
         </div>
       </a>
-      <a href="">
         <div class="more row">
           <i class="fa-solid fa-bars"></i>
           <p>More</p>
         </div>
-      </a>
     </div>
-    <!-- Search -->
+    <!-- Search Modal-->
     <div class="searchModal">
       <div class="top-side">
         <h2>Search</h2>
@@ -154,6 +151,28 @@
     <i class="fa-solid fa-x"></i>
   </div>
  </div>
+    </div>
+    <!-- More Modal -->
+    <div class="menuModal">
+      <a id="setting" href="./edit.html">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+      </a>
+      <a id="activity">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Your Activity</span>
+      </a>
+      <a id="saved">
+        <i class="fa-regular fa-bookmark" style="margin-right: 14px;"></i>
+        <span>Saved</span>
+      </a>
+      <a id="switch-appearance">
+        <i class="fa-regular fa-moon"></i>
+        <span>Switch Appearance</span>
+      </a>
+      <hr style="margin: 10px -9px;"> 
+      <div id="switch-accounts">Switch Accounts</div>
+      <a href="" id="logOut">Log out</a>
     </div>
     <!-- Responsive Top-Side Index For Mobile -->
     <div class="mobile-top">
@@ -616,7 +635,7 @@
         </a>
         <a href="">
           <div class="explore row">
-            <img style="width: 28px; height: 28px;margin-left: -27px; "
+            <img style="width: 28px; height: 28px;"
               src="./client/assets/images/icon/explore-tool-black-icon.svg"
               alt=""
             />
@@ -655,4 +674,5 @@
         </a>
       </div>
   </body>
+  <script src="./client/assets/js/main.js"></script>
 </html>
