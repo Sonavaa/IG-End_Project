@@ -4,18 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./client/assets/css/bootstrap.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          screens: {
-            sm: "768px",
-            md: "1262px",
-            lg: "1440px",
-          },
-        },
-      };
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./client/assets/css/profile.css">
     <title>Instagram</title>
@@ -23,151 +11,151 @@
 <body class="flex justify-end">
      <!-- Menu -->
      <div class="left-side-menu">
-        <a href="#">
-          <div class="logo row">
+      <a href="#">
+               <div class="logo row">
+          <img
+            style="width: 48px; height: 48px"
+            class="resp-logo"
+            src="./client/assets/images/icon/instagram-black-logo.svg"
+            alt=""
+          />
+          <img
+            style="width: 183px; height: 76px; padding: 2px; margin-left: -8px"
+            class="text-logo"
+            src="./client/assets/images/icon/instagram-text-white-icon.svg"
+            alt=""
+          />
+        </div>
+      </a>
+      <a href="">
+        <div class="home row">
+          <img src="./client/assets/images/icon/home-black-icon.svg" alt="" />
+          <p>Home</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="search row">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>Search</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="explore row">
+          <img
+            src="./client/assets/images/icon/explore-tool-white-icon.svg"
+            alt=""
+          />
+          <p>Explore</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="reels row">
+          <img
+            src="./client/assets/images/icon/instagram-reels-white-icon.svg"
+            alt=""
+          />
+          <p>Reels</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="messages row">
+          <div class="msg-notfication">
             <img
-              style="width: 48px; height: 48px"
-              class="resp-logo"
-              src="./client/assets/images/icon/instagram-black-logo.svg"
+              src="./client/assets/images/icon/messenger-white-icon.svg"
               alt=""
             />
-            <img
-              style="width: 200px; height: 80px; padding: 2px;"
-              class="text-logo"
-              src="./client/assets/images/icon/instagram-text-white-icon.svg"
-              alt=""
-            />
+            <span class="notfication">2</span>
           </div>
-        </a>
-        <a href="">
-          <div class="home row">
-            <img src="./client/assets/images/icon/home-black-icon.svg" alt="" />
-            <p>Home</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="search row">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <p>Search</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="explore row">
-            <img
-              src="./client/assets/images/icon/explore-tool-white-icon.svg"
-              alt=""
-            />
-            <p>Explore</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="reels row">
-            <img
-              src="./client/assets/images/icon/instagram-reels-white-icon.svg"
-              alt=""
-            />
-            <p>Reels</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="messages row">
-            <div class="msg-notfication">
-              <img
-                src="./client/assets/images/icon/messenger-white-icon.svg"
-                alt=""
-              />
-              <span class="notfication">2</span>
-            </div>
-            <p>Messages</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="notfications row">
-            <i class="fa-regular fa-heart"></i>
-            <p>Notfications</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="create row">
-            <i class="fa-regular fa-square-plus"></i>
-            <p>Create</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="profile row">
-            <img
-              src="./client/assets/images/profile-photos/profile.jpeg"
-              alt=""
-            />
-            <p>Profile</p>
-          </div>
-        </a>
-        <a href="https://www.threads.net/login" target="_blank">
-          <div class="threads row">
-            <img
-              src="./client/assets/images/icon/threads-white-icon.svg"
-              alt=""
-            />
-            <p>Threads</p>
-          </div>
-        </a>
-        <a href="">
-          <div class="more row">
-            <i class="fa-solid fa-bars"></i>
-            <p>More</p>
-          </div>
-        </a>
-      </div>
+          <p>Messages</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="notfications row">
+          <i class="fa-regular fa-heart"></i>
+          <p>Notfications</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="create row">
+          <i class="fa-regular fa-square-plus"></i>
+          <p>Create</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="profile row">
+          <img
+            src="./client/assets/images/profile-photos/profile.jpeg"
+            alt=""
+          />
+          <p>Profile</p>
+        </div>
+      </a>
+      <a href="https://www.threads.net/login" target="_blank">
+        <div class="threads row">
+          <img
+            src="./client/assets/images/icon/threads-white-icon.svg"
+            alt=""
+          />
+          <p>Threads</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="more row">
+          <i class="fa-solid fa-bars"></i>
+          <p>More</p>
+        </div>
+      </a>
+    </div>
       <!-- Profile View -->
-      <div class="container flex flex-col justify-center items-center">
-        <div class="profile-view w-[950px] h-[400px] border-b pb-[40px] ml-[130px]">
-<div class="top-side w-[900px] flex justify-around items-center ">
+      <div class="container">
+        <div class="profile-view">
+<div class="top-side">
   <a href="">
     <div>
-      <img class="w-[150px] h-[150px] rounded-full ml-[110px] border-2 border-color: currentColor mt-5"
+      <img
        src="./client/assets/images/profile-photos/profile.jpeg" alt="">
     </div>
   </a>
-<div class="top-right mr-[110px] w-[360px] flex-col flex items-between justify-center mt-11">
-  <div class="edit-archive flex justify-between items-center">
-    <span id="userName" class="text-[24px]">sonava</span>
-    <a href=""><span id="edit" class="text-sm w-[105px] h-[30px] border rounded-lg flex justify-center items-center ml-6">Edit profile</span></a>
-    <a href=""><span id="archive" class="text-sm w-[105px] h-[30px] border rounded-lg flex justify-center items-center">View archive</span></a>
-    <a href=""><span id="settings" class="text-lg"><i class="fa-solid fa-gear"></i></span></a>
+<div class="top-right">
+  <div class="edit-archive">
+    <span id="userName">sonava</span>
+    <a href=""><span id="edit">Edit profile</span></a>
+    <a href=""><span id="archive">View archive</span></a>
+    <a href=""><span id="settings"><i class="fa-solid fa-gear"></i></span></a>
   </div>
-  <div class="post-follower-count flex justify-between items-center my-4">
-    <span><span id="posts-count" class="mr-2">0</span>posts</span>
-    <span><span id="posts-count" class="mr-2">111</span>followers</span>
-    <span><span id="posts-count" class="mr-2">665</span>following</span>
+  <div class="post-follower-count">
+    <span><span id="posts-count">0</span>posts</span>
+    <span><span id="posts-count">111</span>followers</span>
+    <span><span id="posts-count">665</span>following</span>
   </div>
   <div class="info">
-    <span id="name" class="font-bold text-sm">Sona Abbasova</span>
-    <p id="bio" class="w-[360px] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel unde
+    <span id="name">Sona Abbasova</span>
+    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel unde
        sapiente suscipit numquam repellendus nobis at optio omnis sed.</p>
   </div>
 </div>
 </div>
-<div class="highlights flex ">
-<div class="highlight flex flex-col items-center pt-10 ml-20">
-  <div class="circle w-[80px] h-[80px] rounded-full bg-[#121212] text-center border border-current">
-    <span class="text-gray-300 text-5xl"><i class="fa-solid fa-plus mt-4"></i></span>
+<div class="highlights flex">
+<div class="highlight">
+  <div class="circle">
+    <span><i class="fa-solid fa-plus"></i></span>
   </div>
-  <span class="text-sm font-semibold my-2">New</span>
+  <span style="font-size: 14px; font-weight: semibold; margin: 8px 0;">New</span>
 </div>
 </div>
         </div>
-        <div class="posts flex w-[270px] h-5 justify-between items-center mt-3 ml-20 text-sm">
-          <a href=""><span class="flex gap-1 items-center"><i class="fa-brands fa-slack"></i> POSTS</span></a>
-          <a href=""><span class="flex gap-1 items-center"><i class="fa-regular fa-bookmark"></i>SAVED</span></a>
-          <a href=""><span class="flex gap-1 items-centerx"><img class="bg-current w-5" src="./client/assets/images/icon/instagram-tag-icon.svg" alt="">TAGGED</span></a>
+        <div class="posts">
+          <a href=""><span><i class="fa-brands fa-slack"></i> POSTS</span></a>
+          <a href=""><span><i class="fa-regular fa-bookmark"></i>SAVED</span></a>
+          <a href=""><span><img src="./client/assets/images/icon/instagram-tag-icon.svg" alt="">TAGGED</span></a>
         </div>
-        <img class="no-photo w-16 h-16 bg-current mt-16 ml-20" src="./client/assets/images/icon/no-photo-icon.svg" alt="">
-        <h3 class="font-bold ml-20 mt-5 text-3xl">Share Photos</h3>
-        <span class="w-[350px] ml-20 my-5 text-center">When you share photos, they will appear on your profile.</span>
-     <p id="share" class="share ml-20 text-blue-600">Share your first photo</p>
+        <img class="no-photo" src="./client/assets/images/icon/no-photo-icon.svg" alt="">
+        <h3 style="font-weight: bold; margin-left: 80px;margin-top: 20px;font-size: 30px;">Share Photos</h3>
+        <span style="width: 350px;margin: 20px 0; margin-left: 80px; text-align: center;">When you share photos, they will appear on your profile.</span>
+     <p id="share" class="share">Share your first photo</p>
      <input type="file" value="" class="hidden" id="input">
-     <section class="bottom text-center ml-20 mt-32 mb-14 text-[12px] text-gray-400">
-      <p class="flex gap-5 mb-4">
+     <section class="bottom">
+      <p style="display: flex; gap: 20px; margin-bottom: 16px;">
         <a href="https://about.instagram.com/">About</a>  <a href="https://help.instagram.com/">Help</a>  <a href="https://about.instagram.com/blog">Press</a> 
         <a href="https://developers.facebook.com/docs/instagram">API</a>  <a href="https://about.instagram.com/about-us/careers">Jobs</a>  <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a> 
         <a href="https://help.instagram.com/581066165581870/">Terms</a>  <a href="https://www.instagram.com/explore/locations/">Locations</a> 
@@ -178,7 +166,7 @@
     </section>
     
 <!-- Modal -->
-<div class="overlay hidden"></div>
+<!-- <div class="overlay hidden"></div>
 <div id="modal" class="bg-current w-[500px] h-[500px] flex flex-col items-center absolute ml-20 mb-[350px] rounded-[10px] hidden">
   <p class="w-full border-b text-black py-2 text-center text-lg">Create new post</p>
   <img class="w-[100px] h-[100px] mt-24" src="./client/assets/images/icon/instagram-drag-drop-icon.svg" alt="">
@@ -187,7 +175,7 @@
     Select from computer
   </button>
   </div>
-      </div>
+      </div> -->
 
 
 
@@ -195,7 +183,4 @@
 
 </body>
 <script src="./client/assets/js/profile.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
