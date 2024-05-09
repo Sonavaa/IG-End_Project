@@ -14,6 +14,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  /* overflow: hidden; */
 }
 .container {
   display: flex !important;
@@ -52,7 +53,7 @@ a {
 }
 .left-side-menu .logo img {
   scale: 1.1;
-  padding: 0 12px; 
+  padding: 0 12px;
   position: absolute;
 }
 .left-side-menu .row {
@@ -63,9 +64,9 @@ a {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 10px;
-  padding: 0px 12px ;
-  }
-.left-side-menu .row:hover{
+  padding: 0px 12px;
+}
+.left-side-menu .row:hover {
   background-color: #313131;
   transition: 0.2s linear;
   cursor: pointer;
@@ -151,30 +152,30 @@ a {
   margin-left: -12px;
   padding-left: 1px;
 }
-.mobile-top{
+.mobile-top {
   display: none !important;
 }
 
-.searchModal{
+.searchModal {
   width: 420px;
   height: 100%;
-background-color: #000;
-position: fixed;
-z-index: 99999;
-left: 0;
-margin-left: 69px;
-display: none;
+  background-color: #000;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  margin-left: 69px;
+  display: none;
 }
-.searchModal h2{
+.searchModal h2 {
   margin: 26px 40px 30px 40px;
   font-weight: 600;
 }
-.searchModal .searchBar{
-border-bottom: 1px solid #FFF;
-padding-bottom: 22px;
-padding-left: 4%;
+.searchModal .searchBar {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 22px;
+  padding-left: 4%;
 }
-.searchModal .searchBar input{
+.searchModal .searchBar input {
   width: 96%;
   height: 40px;
   border-radius: 7px;
@@ -182,23 +183,23 @@ padding-left: 4%;
   z-index: 2;
   padding-left: 35px;
   padding-top: 3px;
-
 }
-.searchModal .searchBar input::placeholder{
-font-size: 16px;
+.searchModal .searchBar input::placeholder {
+  font-size: 16px;
 }
-.searchModal .searchBar textarea:focus, input:focus{
+.searchModal .searchBar textarea:focus,
+input:focus {
   outline: none;
 }
-.searchModal .searchBar .fa-magnifying-glass{
+.searchModal .searchBar .fa-magnifying-glass {
   position: absolute;
   z-index: 9999;
   color: #000;
   font-size: 18px;
   margin: 11px 10px;
 }
-.searchModal .searchBar .fa-x{
-position: absolute;
+.searchModal .searchBar .fa-x {
+  position: absolute;
   z-index: 99999;
   color: #000;
   font-size: 9px;
@@ -210,7 +211,7 @@ position: absolute;
   border-radius: 20px;
   padding: 6px 7px;
 }
-.searchModal .status-bar{
+.searchModal .status-bar {
   margin: 20px 0;
   font-size: 15px;
   display: flex;
@@ -218,18 +219,18 @@ position: absolute;
   padding: 0 20px;
   font-weight: bold;
 }
-.searchModal .status-bar #recent{
+.searchModal .status-bar #recent {
   margin-left: 12px;
 }
-.searchModal .status-bar #clear_all:hover{
-color: dodgerblue;
-transition: 0.1s linear;
+.searchModal .status-bar #clear_all:hover {
+  color: dodgerblue;
+  transition: 0.1s linear;
 }
-.searchModal .searched-accounts{
+.searchModal .searched-accounts {
   display: flex;
   flex-direction: column;
 }
- .searchModal .searched-account {
+.searchModal .searched-account {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -321,11 +322,72 @@ transition: 0.1s linear;
   border-radius: 10px;
   transition: 0.2s linear;
 }
-
-
-
-
-
+.switchModal {
+  width: 383px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #6d6d6d;
+  border-radius: 13px;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 55555;
+  display: none;
+}
+.switchModal .fa-x {
+  margin-left: 85%;
+  padding-top: 18px;
+  font-size: 22px;
+}
+.switchModal img {
+  width: 175px;
+  height: 51px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.switchModal input {
+  width: 252px;
+  height: 36px;
+  padding: 9px 0 7px 8px;
+  margin-bottom: 5px;
+}
+.switchModal input:focus {
+  outline-color: #d4cece !important;
+}
+.form-check {
+  display: flex;
+  align-self: baseline;
+  margin: 5px 0 0 66px;
+}
+.form-check input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.switchModal button {
+  width: 252px;
+  height: 33px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+  background-color: #1698ee;
+  color: #fff;
+}
+.switchModal a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 0 35px 0;
+  color: #00376b !important;
+  font-size: 12px;
+}
 
 @media (max-width: 1262px) {
   .screen {
@@ -333,11 +395,11 @@ transition: 0.1s linear;
     margin: 0 auto;
   }
   .container {
-display: flex !important;
-justify-content: center !important;
-/* margin-left: 0% !important; */
+    display: flex !important;
+    justify-content: center !important;
+    /* margin-left: 0% !important; */
   }
-  .mobile-top{
+  .mobile-top {
     display: none !important;
   }
   .container .main-share {
@@ -390,7 +452,7 @@ justify-content: center !important;
   .suggestion {
     display: none !important;
   }
-  .mobile-bottom{
+  .mobile-bottom {
     display: none;
   }
 }
@@ -403,44 +465,44 @@ justify-content: center !important;
   .left-side-menu {
     display: none !important;
   }
-  .container{
+  .container {
     margin: 60px auto 0 !important;
     position: relative;
   }
-  .mobile-top{
+  .mobile-top {
     width: 100%;
     background-color: #000;
     display: flex !important;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     z-index: 9999;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #fff;
   }
-  .mobile-top .logo{
+  .mobile-top .logo {
     scale: 0.7;
-    background: #FFF;
+    background: #fff;
     width: 175px;
     height: 71px;
   }
-  .mobile-top a{
+  .mobile-top a {
     width: 0;
   }
-  .mobile-top .right-side{
+  .mobile-top .right-side {
     display: flex;
     align-items: center;
-     gap: 20px;
+    gap: 20px;
   }
-  .mobile-top .right-side .search-bar{
+  .mobile-top .right-side .search-bar {
     position: relative;
     display: flex;
     align-items: center;
   }
-  .mobile-top .right-side .search-bar i{
+  .mobile-top .right-side .search-bar i {
     position: absolute;
     margin-left: 15px;
   }
-  .mobile-top .right-side .search-bar input{
+  .mobile-top .right-side .search-bar input {
     width: 250px;
     height: 40px;
     border-radius: 6px;
@@ -448,16 +510,16 @@ justify-content: center !important;
     background-color: #242527;
     font-size: 16px;
   }
-  .mobile-top .right-side .search-bar input::placeholder{
+  .mobile-top .right-side .search-bar input::placeholder {
     color: white;
     font-size: 17px;
     padding: 0 40px;
   }
-  .mobile-top .fa-heart{
-padding-right: 15px;
-font-size: 22px;
+  .mobile-top .fa-heart {
+    padding-right: 15px;
+    font-size: 22px;
   }
-  .mobile-bottom{
+  .mobile-bottom {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
@@ -469,24 +531,23 @@ font-size: 22px;
     background-color: #000;
     color: #000;
     bottom: 0;
-    border-top: 1px solid #FFF;
+    border-top: 1px solid #fff;
   }
-  .mobile-bottom .row i{
-font-size: 28px;
-color: #FFF;
+  .mobile-bottom .row i {
+    font-size: 28px;
+    color: #fff;
   }
-  .mobile-bottom .row img{
+  .mobile-bottom .row img {
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    background-color: #FFF;
+    background-color: #fff;
   }
-  .mobile-bottom .home img{
+  .mobile-bottom .home img {
     clip-path: polygon(50% 20%, 77% 47%, 77% 80%, 23% 80%, 23% 46%);
   }
-  .mobile-bottom .reels img{
+  .mobile-bottom .reels img {
     clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
-
   }
 }
 .main-share {
@@ -535,7 +596,7 @@ color: #FFF;
   height: 825px;
   margin: 0 auto;
   font-size: 14px;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
 }
 .post p {
   margin: 4px 0;
@@ -673,14 +734,11 @@ color: #FFF;
   font-size: 14px;
   font-weight: 200;
   margin-left: 10px;
-
 }
 .suggestion .switch-account .info #userName {
   font-weight: 600;
-
 }
 .suggestion .switch-account .info #name {
-
 }
 .suggestion .navigate {
   width: 287px;
@@ -752,6 +810,6 @@ color: #FFF;
   text-decoration: underline;
   transition: 0.7;
 }
-.mobile-bottom{
+.mobile-bottom {
   display: none;
 }

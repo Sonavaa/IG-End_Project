@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap");
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.switchModal {
+  width: 383px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid #6d6d6d;
+  border-radius: 13px;
+  background-color: #fff;
+}
+.switchModal .fa-x {
+  margin-left: 85%;
+  padding-top: 18px;
+  font-size: 22px;
+}
+.switchModal img {
+  width: 175px;
+  height: 51px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.switchModal input {
+  width: 252px;
+  height: 36px;
+  padding: 9px 0 7px 8px;
+  margin-bottom: 5px;
+}
+.switchModal input:focus {
+  outline-color: #d4cece !important;
+}
+.form-check {
+  display: flex;
+  align-self: baseline;
+  margin: 5px 0 0 66px;
+}
+.form-check input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.switchModal button {
+  width: 252px;
+  height: 33px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+  background-color: #1698ee;
+  color: #fff;
+}
+.switchModal a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 0 35px 0;
+}
