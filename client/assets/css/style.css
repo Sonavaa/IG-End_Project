@@ -22,6 +22,7 @@ body {
   justify-content: center;
   margin-left: 18% !important;
   right: 0;
+  position: relative;
 }
 a {
   color: #fff !important;
@@ -119,6 +120,10 @@ a {
 }
 .left-side-menu .create p {
   margin-left: 14px;
+}
+.left-side-menu #create-input{
+  display: none;
+  visibility: hidden;
 }
 .left-side-menu .profile p {
   margin-left: 7px;
@@ -321,6 +326,7 @@ input:focus {
   height: 50px;
   border-radius: 10px;
   transition: 0.2s linear;
+  cursor: pointer;
 }
 .switchModal {
   width: 383px;
@@ -387,6 +393,81 @@ input:focus {
   margin: 10px 0 35px 0;
   color: #00376b !important;
   font-size: 12px;
+}
+.create-new-post-Modal{
+  display: flex;
+  flex-direction: column;
+  width: 864px;
+  height: 531px;
+  margin-top: 60px;
+  margin-left: -20%;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 9999999999999999999999;
+  display: none;
+}
+.create-new-post-Modal .navigation{
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: end;
+  gap: 37%;
+padding: 10px 15px;
+border-bottom: 1px solid #fff;
+}
+.create-new-post-Modal .navigation #share-post{
+  color: dodgerblue !important;
+  cursor: pointer;
+}
+.create-new-post-Modal .navigation #share-post:hover{
+  color: #fff !important;
+}
+.post-and-caption{
+display: flex;
+}
+.create-new-post-Modal .post-and-caption .post-view-side{
+width: 58%;
+height: 487px;
+object-fit: cover;
+}
+.create-new-post-Modal .post-and-caption .post-view-side img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+}
+.create-new-post-Modal .caption-side{
+  width: 42%;
+  padding: 0 10px;
+}
+.create-new-post-Modal .caption-side .about-user{
+display: flex;
+align-items: center;
+gap: 5px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.create-new-post-Modal .caption-side .about-user img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+.caption-side textarea{
+  width: 100%;
+  height: 180px;
+resize: none;
+padding: 10px;
+font-size: 14px;
+border: none;
+}
+.caption-side textarea:focus{
+outline: none;
+}
+.fa-face-smile{
+  font-size: 20px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 1262px) {
@@ -696,7 +777,78 @@ input:focus {
 .comment-view #comment {
   margin-right: 64%;
 }
-
+.create-new-post-Modal{
+  display: flex;
+  flex-direction: column;
+  width: 864px;
+  margin-top: 40px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 9999999999999999999999999;
+  display: none;
+}
+.create-new-post-Modal .navigation{
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  gap: 39%;
+padding: 10px 15px;
+border-bottom: 1px solid #fff;
+}
+.create-new-post-Modal .navigation #share-post{
+  color: dodgerblue;
+  cursor: pointer;
+}
+.create-new-post-Modal .navigation #share-post:hover{
+  color: #fff;
+}
+.post-and-caption{
+display: flex;
+}
+.create-new-post-Modal .post-and-caption .post-view-side{
+width: 58%;
+height: 487px;
+object-fit: cover;
+}
+.create-new-post-Modal .post-and-caption .post-view-side img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+}
+.create-new-post-Modal .caption-side{
+  width: 42%;
+  padding: 0 10px;
+}
+.create-new-post-Modal .caption-side .about-user{
+display: flex;
+align-items: center;
+gap: 5px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.create-new-post-Modal .caption-side .about-user img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+.caption-side textarea{
+  width: 100%;
+  height: 180px;
+resize: none;
+padding: 10px;
+font-size: 14px;
+border: none;
+}
+.caption-side textarea:focus{
+outline: none;
+}
+.fa-face-smile{
+  font-size: 20px;
+  padding-left: 10px;
+  cursor: pointer;
+}
 .suggestion {
   width: 384px;
   height: 44px;

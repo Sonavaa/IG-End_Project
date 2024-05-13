@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Switch Accounts</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="./client/assets/lib/css/emoji.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -14,25 +20,177 @@
     <link rel="stylesheet" href="./client/assets/css/modals.css" />
   </head>
   <body>
-    <!-- Switch Accounts Modal -->
-    <div class="switchModal">
-      <i class="fa-solid fa-x"></i>
-      <img
-        src="./client/assets/images/icon/instagram-text-black-icon.svg"
-        alt=""
-      />
-      <form action="">
-        <input type="text" placeholder="Phone number, username, or email" />
-        <input type="password" placeholder="Password" />
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="" />
-          <label class="form-check-label" for="form-check-input"
-            >Save login info</label
-          >
+    <!-- Edit Post Modal -->
+    <div class="create-new-post-Modal">
+      <div class="navigation">
+        <span>Cancel</span>
+        <span>Edit info</span>
+        <a id="share-post">Done</a>
+      </div>
+      <div class="post-and-caption">
+        <div class="post-view-side">
+          <img src="./client/assets/images/photos/img-1.jpeg" alt="" />
         </div>
-        <button>Log in</button>
-        <a href="">Forgot password?</a>
-      </form>
+        <div class="caption-side">
+          <div class="about-user">
+            <img
+              src="./client/assets/images/profile-photos/profile.jpeg"
+              alt=""
+            />
+            <span id="userName">sonava</span>
+          </div>
+          <p class="lead emoji-picker-container">
+            <textarea
+              class="form-control textarea-control"
+              rows="3"
+              placeholder="Write a caption..."
+              data-emojiable="true"
+            ></textarea>
+          </p>
+        </div>
+      </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Post Detail (Index Action) -->
+    <div class="post-detail-Modal">
+      <div class="detail-post-view-side">
+        <img src="./client/assets/images/photos/img-1.jpeg" alt="" />
+      </div>
+      <div class="functional-side">
+                  <!-- 3 Dots Modal on Post (Delete/Cancel) -->
+    <div class="delete-cancel">
+      <a>Delete</a>
+      <p>Cancel</p>
+    </div>
+        <div class="about-user">
+          <div class="left-side">
+            <img
+              src="./client/assets/images/profile-photos/profile.jpeg"
+              alt=""
+            />
+            <span id="userName">sonava</span>
+            <span style="margin-bottom: 10px;">.</span>
+            <span id="follow-or-following">Follow</span>
+          </div>
+          <div class="right-side">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+        <div class="comment-show-area">
+          <div>
+            <div class="post-caption-static">
+              <div class="">
+                <img
+                  src="./client/assets/images/profile-photos/profile.jpeg"
+                  alt=""
+                />
+              </div>
+              <p>
+                <span id="userName">sonava</span> I can feel it. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Ipsa, et. Labore
+                est distinctio impedit odit ab. Accusamus, laborum quidem,
+                repudiandae itaque facilis sequi doloremque recusandae nobis
+                quae ab sunt cumque.
+              </p>
+            </div>
+          </div>
+          <!-- Comment-View -->
+          <div class="comment">
+            <div class="top">
+              <div class="comment-view">
+                <div class="right">
+                  <div class="">
+                    <img
+                      src="./client/assets/images/profile-photos/profile.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="cmt">
+                    <p id="comment">
+                      <span id="userName">sonava</span> I can feel it. Lorem
+                      ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+                      et. Labore est distinctio impedit odit ab. Accusamus,
+                      laborum quidem, repudiandae itaque facilis sequi
+                      doloremque recusandae nobis quae ab sunt cumque.
+                    </p><span id="less-span">Show less</span>
+                    <div class="bottom">
+                      <span>Reply</span>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                  <span id="more-span">...more</span>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-side">
+          <div class="left">
+            <i class="fa-regular fa-heart"></i>
+            <img
+              style="width: 36px; height: 22px"
+              src="./client/assets/images/icon/bubble-comment-white-icon.svg"
+              alt=""
+            />
+            <img
+              style="width: 30px; height: 22px"
+              src="./client/assets/images/icon/send-white-icon.svg"
+              alt=""
+            />
+          </div>
+          <i style="font-size: 22px" class="fa-regular fa-bookmark"></i>
+        </div>
+
+        <p class="lead emoji-picker-container">
+          <textarea
+            class="form-control textarea-control"
+            rows="3"
+            placeholder="Write a caption..."
+            data-emojiable="true"
+          ></textarea>
+        </p>
+      </div>
+    </div>
+
+    <!-- Delete Modal (Partial View) -->
   </body>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Begin emoji-picker JavaScript -->
+  <script src="./client/assets/lib/js/config.min.js"></script>
+  <script src="./client/assets/lib/js/util.min.js"></script>
+  <script src="./client/assets/lib/js/jquery.emojiarea.min.js"></script>
+  <script src="./client/assets/lib/js/emoji-picker.min.js"></script>
+  <script src="./client/assets/js/modals.js"></script>
 </html>
+
+<!-- 
+    <script>
+      const smile = document.querySelector(".fa-face-smile")
+      
+      $(function() {
+        // Initializes and creates emoji set from sprite sheet
+        window.emojiPicker = new EmojiPicker({
+          emojiable_selector: '[data-emojiable=true]',
+          assetsPath: './client/assets/lib/img/',
+          popupButtonClasses: 'fa fa-smile-o'
+        });
+        // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+        // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+        // It can be called as many times as necessary; previously converted input fields will not be converted again
+        window.emojiPicker.discover();
+      });
+    </script> -->

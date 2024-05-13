@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="./client/assets/lib/css/emoji.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -80,12 +86,13 @@
           <p>Notfications</p>
         </div>
       </a>
-      <a href="">
+      <a class="create-row">
         <div class="create row">
           <i class="fa-regular fa-square-plus"></i>
           <p>Create</p>
         </div>
       </a>
+      <input type="file" id="create-input">
       <a href="">
         <div class="profile row">
           <img
@@ -179,6 +186,7 @@
       <div id="switch-accounts">Switch Accounts</div>
       <a href="" id="logOut">Log out</a>
     </div>
+    <!-- Switch Accounts Modal -->
     <div class="switchModal">
       <i class="fa-solid fa-x"></i>
       <img
@@ -198,6 +206,7 @@
         <a href="./forgot-password.html">Forgot password?</a>
       </form>
     </div>
+
     <!-- Responsive Top-Side Index For Mobile -->
     <div class="mobile-top">
       <a href="#">
@@ -218,7 +227,67 @@
         <i class="fa-regular fa-heart"></i>
       </div>
     </div>
+    
     <div class="container">
+          <!-- Edit Post Modal -->
+    <div class="create-new-post-Modal  edit-post-modal">
+      <div class="navigation">
+        <span>Cancel</span>
+        <span>Edit info</span>
+        <a id="share-post  done-text">Done</a>
+      </div>
+      <div class="post-and-caption">
+        <div class="post-view-side">
+          <img src="./client/assets/images/photos/img-1.jpeg" alt="" />
+        </div>
+        <div class="caption-side">
+          <div class="about-user">
+            <img
+              src="./client/assets/images/profile-photos/profile.jpeg"
+              alt=""
+            />
+            <span id="userName">sonava</span>
+          </div>
+          <p class="lead emoji-picker-container">
+            <textarea
+              class="form-control textarea-control"
+              rows="3"
+              placeholder="Write a caption..."
+              data-emojiable="true"
+            ></textarea>
+          </p>
+        </div>
+      </div>
+    </div>
+           <!-- Create New Post Modal -->
+           <div class="create-new-post-Modal create-post-modal">
+            <div class="navigation">
+              <span>Create new post</span>
+              <a id="share-post share-text">Share</a>
+            </div>
+            <div class="post-and-caption">
+              <div class="post-view-side">
+                <img id="post-file" src="./client/assets/images/photos/img-1.jpeg" alt="" />
+              </div>
+              <div class="caption-side">
+                <div class="about-user">
+                  <img
+                    src="./client/assets/images/profile-photos/profile.jpeg"
+                    alt=""
+                  />
+                  <span>sonava</span>
+                </div>
+                <p class="lead emoji-picker-container">
+                  <textarea
+                    class="form-control textarea-control"
+                    rows="3"
+                    placeholder="Write a caption..."
+                    data-emojiable="true"
+                  ></textarea>
+                </p>
+              </div>
+            </div>
+          </div>
       <!-- Story and Posts -->
       <div class="main-share">
         <section class="story-slider">
@@ -719,5 +788,12 @@
       </a>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Begin emoji-picker JavaScript -->
+    <script src="./client/assets/lib/js/config.min.js"></script>
+    <script src="./client/assets/lib/js/util.min.js"></script>
+    <script src="./client/assets/lib/js/jquery.emojiarea.min.js"></script>
+    <script src="./client/assets/lib/js/emoji-picker.min.js"></script>
   <script src="./client/assets/js/main.js"></script>
 </html>
