@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Edit Post Modal -->
-    <div class="create-new-post-Modal">
+    <!-- <div class="create-new-post-Modal">
       <div class="navigation">
         <span>Cancel</span>
         <span>Edit info</span>
@@ -49,31 +49,20 @@
           </p>
         </div>
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    </div> -->
 
     <!-- Post Detail (Index Action) -->
-    <div class="post-detail-Modal">
+    <div class="post-comment-detail-Modal">
       <div class="detail-post-view-side">
         <img src="./client/assets/images/photos/img-1.jpeg" alt="" />
       </div>
       <div class="functional-side">
-                  <!-- 3 Dots Modal on Post (Delete/Cancel) -->
-    <div class="delete-cancel">
-      <a>Delete</a>
-      <p>Cancel</p>
-    </div>
+        <!-- 3 Dots Modal on Post Detail (Delete/Cancel) -->
+        <div class="delete-cancel">
+          <a href="">report</a>
+          <a>Delete</a>
+          <p>Cancel</p>
+        </div>
         <div class="about-user">
           <div class="left-side">
             <img
@@ -81,7 +70,7 @@
               alt=""
             />
             <span id="userName">sonava</span>
-            <span style="margin-bottom: 10px;">.</span>
+            <span style="margin-bottom: 10px">.</span>
             <span id="follow-or-following">Follow</span>
           </div>
           <div class="right-side">
@@ -107,32 +96,65 @@
             </div>
           </div>
           <!-- Comment-View -->
-          <div class="comment">
-            <div class="top">
-              <div class="comment-view">
-                <div class="right">
-                  <div class="">
-                    <img
-                      src="./client/assets/images/profile-photos/profile.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="cmt">
-                    <p id="comment">
-                      <span id="userName">sonava</span> I can feel it. Lorem
-                      ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
-                      et. Labore est distinctio impedit odit ab. Accusamus,
-                      laborum quidem, repudiandae itaque facilis sequi
-                      doloremque recusandae nobis quae ab sunt cumque.
-                    </p><span id="less-span">Show less</span>
-                    <div class="bottom">
-                      <span>Reply</span>
-                      <i class="fa-solid fa-ellipsis"></i>
+          <div class="comments">
+            <div class="comment">
+              <div class="top">
+                <div class="comment-view">
+                  <div class="right">
+                    <div class="">
+                      <img
+                        src="./client/assets/images/profile-photos/profile.jpeg"
+                        alt=""
+                      />
                     </div>
+                    <div class="cmt">
+                      <p id="comment">
+                        <span id="userName">sonava</span> I can feel it. Lorem
+                        ipsum dolor, sit amet consectetur adipisicing elit.
+                        Ipsa, et. Labore est distinctio impedit odit ab.
+                        Accusamus, laborum quidem, repudiandae itaque facilis
+                        sequi doloremque recusandae nobis quae ab sunt cumque.
+                      </p>
+                      <span id="less-span">Show less</span>
+                      <div class="bottom">
+                        <span>Reply</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </div>
+                    </div>
+                    <span id="more-span">...more</span>
                   </div>
-                  <span id="more-span">...more</span>
+                  <i class="fa-regular fa-heart"></i>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="top">
+                <div class="comment-view">
+                  <div class="right">
+                    <div class="">
+                      <img
+                        src="./client/assets/images/profile-photos/profile.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="cmt">
+                      <p id="comment">
+                        <span id="userName">sonava</span> I can feel it. Lorem
+                        ipsum dolor, sit amet consectetur adipisicing elit.
+                        Ipsa, et. Labore est distinctio impedit odit ab.
+                        Accusamus, laborum quidem, repudiandae itaque facilis
+                        sequi doloremque recusandae nobis quae ab sunt cumque.
+                      </p>
+                      <span id="less-span">Show less</span>
+                      <div class="bottom">
+                        <span>Reply</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </div>
+                    </div>
+                    <span id="more-span">...more</span>
+                  </div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
