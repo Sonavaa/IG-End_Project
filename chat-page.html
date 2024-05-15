@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="myProjects/webProject/icofont/css/icofont.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./client/assets/css/chat-page.css" />
+    <title>instagram.com</title>
+  </head>
+
+  <body>
+     <!-- Menu -->
+     <div class="left-side-menu">
+        <a href="#">
+          <div class="logo row logo-img">
+            <img
+              style="width: 80px; height: 80px"
+              class="resp-logo bg-black"
+              src="./client/assets/images/icon/instagram-black-logo.svg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="#">
+          <div class="home row">
+            <img src="./client/assets/images/icon/home-black-icon.svg" alt="" />
+          </div>
+        </a>
+        <a href="">
+          <div class="search row">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </a>
+        <a href="./explore.html">
+          <div class="explore row">
+            <img
+              src="./client/assets/images/icon/explore-tool-white-icon.svg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="./reels.html">
+          <div class="reels row">
+            <img
+              src="./client/assets/images/icon/instagram-reels-white-icon.svg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="./message.html">
+          <div class="messages row">
+            <div class="msg-notfication">
+              <img
+                src="./client/assets/images/icon/messenger-white-icon.svg"
+                alt=""
+              />
+              <span class="notfication">2</span>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="notfications row">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </a>
+        <a class="create-row">
+          <div class="create row">
+            <i class="fa-regular fa-square-plus"></i>
+          </div>
+        </a>
+        <input type="file" id="create-input" />
+        <a href="./profile.html">
+          <div class="profile row">
+            <img
+              src="./client/assets/images/profile-photos/profile.jpeg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="https://www.threads.net/login" target="_blank">
+          <div class="threads row">
+            <img
+              src="./client/assets/images/icon/threads-white-icon.svg"
+              alt=""
+            />
+          </div>
+        </a>
+        <div class="more row">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <!-- Switch Accounts Modal -->
+      <div class="switchModal">
+        <i class="fa-solid fa-x"></i>
+      <div class="ig-img">
+          <img
+          src="./client/assets/images/icon/instagram-text-black-icon.svg"
+          alt=""
+        />
+      </div>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Phone number, username, or email"
+            class="border border-2"
+          />
+          <input type="password" placeholder="Password" class="border border-2" />
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="" />
+            <label class="form-check-label" for="form-check-input"
+              >Save login info</label
+            >
+          </div>
+          <button>Log in</button>
+          <a href="./forgot-password.html">Forgot password?</a>
+        </form>
+      </div>
+
+    <section class="bg-[rgba(5,5,5,0.95)] h-full w-full ml-[75px] z-50">
+      <!-- msg section -->
+      <body class="flex w-full bg-black text-white mt-5 absolute z-50">
+        <!-- left side -->
+        <div class="overflow-y-scroll w-[395px] h-full fixed">
+          <div
+            class="flex w-[395px] justify-start py-5 font-semibold fixed bg-black"
+          >
+            <div class="open-switch-modal">
+              <a class="pl-7 pr-2 font-bold text-xl cursor-pointer">sonava</a>
+              <i class="fa-solid fa-chevron-down mt-[5px] cursor-pointer"></i>
+            </div>
+            <svg
+              aria-label="New message"
+              class="_ab6- ml-[220px] cursor-pointer"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M12.202 3.203H5.25a3 3 0 0 0-3 3V18.75a3 3 0 0 0 3 3h12.547a3 3 0 0 0 3-3v-6.952"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <path
+                d="M10.002 17.226H6.774v-3.228L18.607 2.165a1.417 1.417 0 0 1 2.004 0l1.224 1.225a1.417 1.417 0 0 1 0 2.004Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="16.848"
+                x2="20.076"
+                y1="3.924"
+                y2="7.153"
+              ></line>
+            </svg>
+          </div>
+          <p class="ml-7 font-bold mt-20">Messages</p>
+
+          <div class="flex flex-col space-y-1 w-full mt-2">
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+            <button
+              class="flex w-[100%] hover:bg-[rgba(37,36,36,0.87)] py-3 pl-[22px] pr-4"
+            >
+              <span>
+                <img
+                  class="w-[50px] h-[50px] rounded-full"
+                  src="imgs/1.jpg"
+                  alt=""
+                />
+              </span>
+
+              <div class="flex flex-col items-start ml-[11px] mr-1">
+                <p>Laeba</p>
+                <p>sent you a message</p>
+              </div>
+              <p class="mt-[22px] mr-2 text-sm text-slate-300">.</p>
+              <p class="mt-[29px] w-[20px] text-xs text-slate-300">12h</p>
+
+              <p class="mt-[-15px] ml-24 text-5xl font-bold text-blue-700">.</p>
+            </button>
+          </div>
+        </div>
+                <!-- Chat View -->
+                <div class="chat">
+                    <div class="header">
+                        <div class="xl">
+                            <div class="pp"><img
+                                    src="https://scontent.cdninstagram.com/v/t51.2885-19/187937112_256823979526525_1045285147349282010_n.jpg?stp=dst-jpg_s100x100&_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=RS3eFqjJ1CoAX_veQVb&_nc_ad=z-m&_nc_cid=1023&_nc_ht=scontent.cdninstagram.com&oh=00_AfD5JOLcylJifQnU1FEDtiAJBFil6bmkRTuscEGbPlgUwA&oe=648A7C36"
+                                    alt=""></div>
+                            <div class="yazi">SUBHAN02</div>
+                        </div>
+                        <div class="xm">
+                            <div class="call"><i class="fa-solid fa-phone"></i></div>
+                            <div class="video"><i class="fa-solid fa-video"></i></div>
+                            <div class="info"><i class="fa-solid fa-circle-info"></i></div>
+                        </div>
+                    </div>
+                    <div class="body-chat-first">
+                        <div class="kisi-pp"><img src="https://scontent.cdninstagram.com/v/t51.2885-19/187937112_256823979526525_1045285147349282010_n.jpg?stp=dst-jpg_s100x100&_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=RS3eFqjJ1CoAX_veQVb&_nc_ad=z-m&_nc_cid=1023&_nc_ht=scontent.cdninstagram.com&oh=00_AfD5JOLcylJifQnU1FEDtiAJBFil6bmkRTuscEGbPlgUwA&oe=648A7C36"alt="">
+                        </div>
+                        <div class="kisi-ismi"><h2>SUBHAN02</h2></div>
+                        <div class="kisi-aciklama"><p>subhan02  Instagram</p></div>
+                        <div class="profiligor-btn"><a href="./profile.html">Profili gör</a></div>
+                    </div>
+                    <div class="ana-chat">
+                        <div class="mesagge-chat">
+                            <div class="message-text">
+                                <li><i class="fa-regular fa-face-smile"></i></li>
+                                <input type="chekbox" class="label" placeholder="Mesaj...">
+                                <li><i class="fa-solid fa-microphone"></i></li>
+                                <li><i class="fa-solid fa-image"></i></li>
+                                <li><i class="fa-regular fa-heart"></i></li>
+                            </div>
+                        </div>
+                        <div class="karsi-yaka">
+                            <div class="karsi-yaka-mesaji">
+                                <div class="karsi-pp"><img src="https://scontent.cdninstagram.com/v/t51.2885-19/187937112_256823979526525_1045285147349282010_n.jpg?stp=dst-jpg_s100x100&_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=RS3eFqjJ1CoAX_veQVb&_nc_ad=z-m&_nc_cid=1023&_nc_ht=scontent.cdninstagram.com&oh=00_AfD5JOLcylJifQnU1FEDtiAJBFil6bmkRTuscEGbPlgUwA&oe=648A7C36"alt=""></div>
+                                <div class="karsi-mesaji"><p>Merhaba Nasılısın? Umarım İyisindir.</h3></div>
+                            </div>
+                            <div class="karsi-yaka-mesaji">
+                                <div class="karsi-pp"><img src="https://scontent.cdninstagram.com/v/t51.2885-19/187937112_256823979526525_1045285147349282010_n.jpg?stp=dst-jpg_s100x100&_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=RS3eFqjJ1CoAX_veQVb&_nc_ad=z-m&_nc_cid=1023&_nc_ht=scontent.cdninstagram.com&oh=00_AfD5JOLcylJifQnU1FEDtiAJBFil6bmkRTuscEGbPlgUwA&oe=648A7C36"alt=""></div>
+                                <div class="karsi-mesaji"><p>Üzerinde durduğun çalışmayı başarıyla sonuçlandıracağının ümit ediyoruz. ve Şimdi den senin bu başarını canı gönülden kutluyoruz 🥳</h3></div>
+                            </div>                   
+                        </div>
+                        <div class="bu-yaka">
+                            <div class="bu-yaka-mesaji">
+                                <div class="bu-yaka-mesaji">
+                                    <div class="karsi-mesaji"><p>Merhaba! Ben iyiyim pekiya Sen</h3></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </body>
+  </html>
