@@ -8,7 +8,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-.create-new-post-Modal{
+.create-new-post-Modal {
   display: flex;
   flex-direction: column;
   width: 864px;
@@ -21,85 +21,69 @@ html {
   position: absolute;
   z-index: 9999999999999999999999999;
 }
-.create-new-post-Modal .navigation{
+.create-new-post-Modal .navigation {
   font-size: 17px;
   font-weight: 700;
   display: flex;
   gap: 39%;
-padding: 10px 15px;
-border-bottom: 1px solid #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid #fff;
 }
-.create-new-post-Modal .navigation #share-post{
+.create-new-post-Modal .navigation #share-post {
   color: dodgerblue;
   cursor: pointer;
 }
-.create-new-post-Modal .navigation #share-post:hover{
+.create-new-post-Modal .navigation #share-post:hover {
   color: #fff;
 }
-.post-and-caption{
-display: flex;
+.post-and-caption {
+  display: flex;
 }
-.create-new-post-Modal .post-and-caption .post-view-side{
-width: 58%;
-height: 487px;
-object-fit: cover;
+.create-new-post-Modal .post-and-caption .post-view-side {
+  width: 58%;
+  height: 487px;
+  object-fit: cover;
 }
-.create-new-post-Modal .post-and-caption .post-view-side img{
+.create-new-post-Modal .post-and-caption .post-view-side img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-bottom-left-radius: 10px;
 }
-.create-new-post-Modal .caption-side{
+.create-new-post-Modal .caption-side {
   width: 42%;
   padding: 0 10px;
 }
-.create-new-post-Modal .caption-side .about-user{
-display: flex;
-align-items: center;
-gap: 5px;
-margin-top: 5px;
-margin-bottom: 10px;
+.create-new-post-Modal .caption-side .about-user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
-.create-new-post-Modal .caption-side .about-user img{
+.create-new-post-Modal .caption-side .about-user img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
-.caption-side textarea{
+.caption-side textarea {
   width: 100%;
   height: 180px;
-resize: none;
-padding: 10px;
-font-size: 14px;
-border: none;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
 }
-.caption-side textarea:focus{
-outline: none;
+.caption-side textarea:focus {
+  outline: none;
 }
-.fa-face-smile{
+.fa-face-smile {
   font-size: 20px;
   padding-left: 10px;
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.post-detail-Modal {
+.post-comment-detail-Modal {
   display: flex;
   max-width: 1140px;
   height: 655px;
@@ -108,11 +92,11 @@ outline: none;
   margin-top: 20px;
   position: relative;
 }
-.post-detail-Modal .detail-post-view-side {
+.post-comment-detail-Modal .detail-post-view-side {
   width: 150%;
   height: 100%;
 }
-.post-detail-Modal .detail-post-view-side img {
+.post-comment-detail-Modal .detail-post-view-side img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -151,6 +135,11 @@ outline: none;
   padding-left: 5px;
   padding-right: 10px;
   font-size: 13px;
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .comment-view {
   display: flex;
@@ -208,8 +197,7 @@ outline: none;
   font-size: 24px;
 }
 
-
-.delete-cancel{
+.delete-cancel {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -223,16 +211,17 @@ outline: none;
   transform: translate(50%, -50%);
   display: none;
 }
-.delete-cancel p,a{
+.delete-cancel p,
+a {
   padding: 15px 0;
   text-align: center;
   cursor: pointer;
 }
-.delete-cancel a{
+.delete-cancel a {
   color: red;
   font-weight: 700;
   border-bottom: 1px solid #cccccc;
 }
-#follow-or-following{
+#follow-or-following {
   cursor: pointer;
 }

@@ -17,16 +17,20 @@ body {
   align-self: center;
   position: relative;
 }
-.ig-icon{
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    background-color: #FFF;
-    left: 0;
-    scale: 0.8;
-    object-fit: cover;
-    margin-left: 10px;
-    margin-top: 8px;
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.ig-icon {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  left: 0;
+  scale: 0.8;
+  object-fit: cover;
+  margin-left: 10px;
+  margin-top: 8px;
 }
 .container {
   display: flex;
@@ -70,128 +74,133 @@ body {
   border: 3px solid black;
   border-radius: 50px;
 }
-.box .cover #userName{
-   margin-top: 10px;
-   font-weight: 600;
-   font-size: 15px;
+.box .cover #userName {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
-.box .cover #hour{
-   font-size: 13px;
- }
- .mainBox .loading-bar{
-    width: 93%;
-    height: 3px;
-    border: 1px solid rgb(192, 191, 191);
-    margin: 20px auto;
-    border-radius: 20px;
-    background-color: rgb(192, 191, 191);
-    position: relative;
- }
- .mainBox .loading-line{
-    position: absolute;
-    width: 10%; 
-    /* max 23% */
-    height: 3px;
-    background-color: #FFF;
-    border-radius: 20px;
-    margin-left: 13px;
-    margin-top: -23px;
- }
- .mainBox .top-info{
-    width: 90%;
-    height: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: -7px 0;
-    margin-left: 13px;
- }
- .mainBox .top-info .left-side{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
- }
- .mainBox .top-info .left-side img{
-    width: 33px;
-    height: 33px;
-    border-radius: 50px;
+.box .cover #hour {
+  font-size: 13px;
 }
-.mainBox .top-info .left-side #hour{
-    color: rgb(216, 215, 215);
-    margin-left: 2px;
-    font-weight: 100;
+.mainBox .loading-bar {
+  width: 93%;
+  height: 3px;
+  border: 1px solid rgb(192, 191, 191);
+  margin: 20px auto;
+  border-radius: 20px;
+  background-color: rgb(192, 191, 191);
+  position: relative;
 }
-.mainBox .right-side{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 16px;
+.mainBox .loading-line {
+  position: absolute;
+  width: 10%;
+  /* max 23% */
+  height: 3px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: 13px;
+  margin-top: -23px;
 }
-.mainBox .right-side #ellipsis{
-    font-size: 25px;
+.mainBox .top-info {
+  width: 90%;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -7px 0;
+  margin-left: 13px;
 }
-.mainBox .bottom-side{
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-    width: 96%;
-    margin-bottom: 10px;
-    font-size: 23px;
+.mainBox .top-info .left-side {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
 }
-.mainBox .bottom-side input{
-    width: 70%;
-    height: 44px;
-     border-radius: 30px;
-     border: 1px solid #FFF;
-     background-color: transparent;
-     color: #FFF;
-     padding-left: 20px;
-     font-size: 14px;
+.mainBox .top-info .left-side img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
 }
-.mainBox .bottom-side textarea:focus, input:focus{
-    outline: none;
-    width: 100% !important;
+.mainBox .top-info .left-side #hour {
+  color: rgb(216, 215, 215);
+  margin-left: 2px;
+  font-weight: 100;
 }
-.mainBox .bottom-side input::placeholder{
-    color: #FFF;
+.mainBox .right-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
-.mainBox .bottom-side #heart{
-    margin: 0 20px;
+.mainBox .right-side #ellipsis {
+  font-size: 25px;
 }
-.container .fa-greater-than, .fa-less-than{
-    border: 1px solid gray;
-    border-radius: 50px;
-    width: 24px;
-    height: 24px;
-    font-size: 10px;
-    position: fixed;
-    top: 50%;
-    padding-top: 7.5px;
-    background-color: rgb(175, 175, 180);
-    color: #1d1c1c;
+.mainBox .bottom-side {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  width: 96%;
+  margin-bottom: 10px;
+  font-size: 23px;
+  cursor: pointer;
 }
-.container .fa-greater-than{
-    right: 35.2%;
-    padding-left: 7.5px;
-} 
-.container .fa-less-than{
-    left: 35.2%;
-    padding-left: 6.5px;
-} 
-.container .fa-greater-than:hover{
-    background-color: #FFF;
-    color: #000;
-    transition: 0,4s linear;
-} 
-.container .fa-less-than:hover{
-    background-color: #FFF;
-    color: #000;
-    transition: 0,4s linear;
-} 
-.fa-x{
-    position: absolute;
-    font-size: 25px;
-    right: 30px;
-    top: 30px;
+.mainBox .bottom-side input {
+  width: 70%;
+  height: 44px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.mainBox .bottom-side textarea:focus,
+input:focus {
+  outline: none;
+  width: 100% !important;
+}
+.mainBox .bottom-side input::placeholder {
+  color: #fff;
+}
+.mainBox .bottom-side #heart {
+  margin: 0 20px;
+}
+.container .fa-greater-than,
+.fa-less-than {
+  border: 1px solid gray;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+  position: fixed;
+  top: 50%;
+  padding-top: 7.5px;
+  background-color: rgb(175, 175, 180);
+  color: #1d1c1c;
+}
+.container .fa-greater-than {
+  right: 35.2%;
+  padding-left: 7.5px;
+}
+.container .fa-less-than {
+  left: 35.2%;
+  padding-left: 6.5px;
+}
+.container .fa-greater-than:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0, 4s linear;
+}
+.container .fa-less-than:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0, 4s linear;
+}
+.x {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  right: 30px;
+  top: 30px;
 }

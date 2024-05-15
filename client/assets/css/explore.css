@@ -163,7 +163,7 @@ a {
   background-color: red;
   object-fit: cover;
 }
-#top-right{
+#top-right {
   width: 317px;
   height: 634px;
   display: grid;
@@ -171,7 +171,7 @@ a {
   grid-row: 1/3;
   object-fit: cover;
 }
-#bottom-left{
+#bottom-left {
   width: 317px;
   height: 634px;
   display: grid;

@@ -27,8 +27,6 @@ $(function() {
 let subString = comment_text.innerText.substring(0, 50);
 const original_commit_text = comment_text.innerText;
 comment_text.innerText = subString
-// console.log(subString);
-//  console.log(userName_in_comment.innerText.length);
 
 more_span.addEventListener("click", function(e) {
   comment_text.innerText = original_commit_text;
@@ -83,13 +81,11 @@ heart_icon_for_like.addEventListener("click", function (e) {
     heart_icon_for_like.classList.remove("fa-regular")
     heart_icon_for_like.classList.add("fa-solid")
     heart_icon_for_like.style.color = "red"
-    console.log("ads")
   }
   else{
     heart_icon_for_like.classList.remove("fa-solid")
     heart_icon_for_like.classList.add("fa-regular")
     heart_icon_for_like.style.color = "white"
-    console.log("nads")
   }
 });
 post_view_on_modal_modal.addEventListener("dblclick", function(){
