@@ -74,6 +74,10 @@ const post_detail = document.querySelector(".post-comment-detail-Modal");
 
 const switch_in_suggestion = document.querySelector("#switch");
 
+const switch_appearance_row_more_modal = document.querySelector("#switch-appearance")
+const switch_appearance_btn = document.querySelector(".mood")
+const switch_appearance_modal = document.querySelector(".appearance-change")
+let isOpen = false;
 // let subStringCaption = post_caption.innerText.substring(0, 100) + post_more_span.innerText
 // const original_caption_text = post_caption
 // post_caption.innerText = subStringCaption
@@ -111,19 +115,36 @@ const switch_in_suggestion = document.querySelector("#switch");
 //   }
 // });
 
+switch_appearance_row_more_modal.addEventListener("click", function(){
+  switch_appearance_modal.style.display = "block";
+menu_Modal.style.display = "none";
+});
+
 post_bottom_comment_icon.addEventListener("click", () => {
   post_detail.style.display = "flex";
+  post_detail.style.position = "fixed";
+  isOpen = true;
   body.style.overflow = "hidden";
 });
 
 view_comments.addEventListener("click", () => {
   post_detail.style.display = "flex";
   body.style.overflow = "hidden";
+  isOpen = true;
 });
 
 add_comment.addEventListener("click", () => {
   post_detail.style.display = "flex";
   body.style.overflow = "hidden";
+  isOpen = true;
+});
+
+window.addEventListener("click", function (event) {
+  if (isOpen && !post_detail.contains(event.target) && !post_bottom_comment_icon.contains(event.target) && !view_comments.contains(event.target) && !add_comment.contains(event.target)) {
+    post_detail.style.display = "none";
+    body.style.overflow = "auto";
+    isOpen = false;
+  }
 });
 
 bookmark.addEventListener("click", function () {
@@ -191,6 +212,10 @@ post_like_bottom_heart.addEventListener("click", function () {
 
 more_row.addEventListener("click", function (e) {
   e.preventDefault();
+  if(switch_appearance_modal.style.display == "block") {
+    switch_appearance_modal.style.display = "none";
+  }
+  
   if (menu_Modal.classList.contains("hidden")) {
     menu_Modal.style.display = "block";
     menu_Modal.classList.remove("hidden");

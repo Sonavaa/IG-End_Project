@@ -47,3 +47,16 @@ message_input.addEventListener("click", function () {
 close_btn.addEventListener("click", function (e) {
   e.preventDefault();
 });
+
+
+document.getElementById('fileInput').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const videoURL = URL.createObjectURL(file);
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoSource = document.getElementById('videoSource');
+
+        videoSource.src = videoURL;
+        videoPlayer.load();
+    }
+});

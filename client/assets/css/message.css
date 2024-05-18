@@ -219,4 +219,11 @@ padding: 0px !important;
     color: #00376b !important;
     font-size: 12px;
   }
-  
+  .new-message-modal input:focus{
+    outline: none;
+    }
+    .new-message-modal input::placeholder{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
