@@ -16,7 +16,7 @@
   <body>
     <!-- Menu -->
     <div class="left-side-menu">
-      <a href="#">
+      <a  rel="stylesheet" href="#">
         <div class="logo row">
           <img
             style="width: 48px; height: 48px"
@@ -32,7 +32,7 @@
           />
         </div>
       </a>
-      <a href="">
+      <a rel="stylesheet" href="">
         <div class="home row">
           <img src="./client/assets/images/icon/home-black-icon.svg" alt="" />
           <p>Home</p>
@@ -114,10 +114,9 @@
       <div class="static-side">
         <h3>Settings</h3>
         <div class="meta">
-          <span id="meta"
-            ><img src="./client/assets/images/icon/meta-icon.svg" alt="" />
-            Meta</span
-          >
+          <span id="meta">
+            <img src="./client/assets/images/icon/meta-icon.svg" alt="" />
+            Meta</span>
           <h4 id="center">Accounts Center</h4>
           <span
             >Manage your connected experiences and account settings across Meta
@@ -129,7 +128,7 @@
           </p>
           <p><i class="fa-solid fa-fingerprint"></i> Password and security</p>
           <p><i class="fa-solid fa-microchip"></i> Ad preferences</p>
-          <a id="see-more" href="">See more in Accounts Center</a>
+          <a id="see-more" href="#">See more in Accounts Center</a>
         </div>
         <p style="margin: 15px 0 15px 25px; font-size: 12px">
           How you use Instagram
@@ -181,7 +180,8 @@
             </div>
           </div>
 
-          <span id="change-photo">Change photo</span>
+          <span id="change-photo" style="cursor: pointer;">Change photo</span>
+          <input type="file" value="" style="display: none;" id="input">
         </div>
         <p style="font-size: 16px; font-weight: bold">Website</p>
         <input id="web-input" type="text" placeholder="Website" disabled />
@@ -234,3 +234,5 @@
     </div>
   </body>
 </html>
+
+<script src="./client/assets/js/settings.js"></script>

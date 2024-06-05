@@ -5,6 +5,38 @@ const like_btn = document.querySelector(".fa-regular");
 const message_input = document.querySelector("#msg-input");
 const share_btn = document.querySelector(".fa-paper-plane");
 const close_btn = document.querySelector("x");
+const box = document.querySelector(".box")
+const main_box = document.querySelector(".mainBox")
+const box_container = document.querySelector(".container")
+const next_btn = document.querySelector(".fa-greater-than")
+    
+next_btn.addEventListener("click", function() {
+  if (box_container.length > 1) {
+    // İlk kutuyu kaydet ve sil
+    const firstBox = box_container[0];
+    firstBox.remove();
+
+    // Mevcut mainbox'ı bulun
+    const currentMainBox = document.querySelector('.mainbox');
+    if (currentMainBox) {
+        // mainbox sınıfını kaldır
+        currentMainBox.classList.remove('mainbox');
+        currentMainBox.classList.add('box');
+    }
+
+    // Yeni mainbox olarak ikinci kutuyu ayarla
+    const newMainBox = box_container[1];
+    if (newMainBox) {
+        newMainBox.classList.remove('box');
+        newMainBox.classList.add('mainbox');
+    }
+}
+})
+
+
+
+
+
 
 high_volume.addEventListener("click", function (e) {
   if (high_volume.classList.contains("fa-volume-high")) {

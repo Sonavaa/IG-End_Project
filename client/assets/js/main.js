@@ -27,7 +27,7 @@ const search_Modal = document.querySelector(".searchModal");
 const search_btn = document.querySelector(".search");
 const search_input = document.querySelector("#input-searchbar");
 const search_input_x = document.querySelector(".searchBar .input-x");
-const search_info_x = document.querySelector(".searched-account .info-x");
+const search_info_x = document.querySelectorAll(".searched-account .info-x");
 const searched_account = document.querySelector(".searched-account");
 const searched_accounts = document.querySelector(".searched-accounts");
 const search_clear_all = document.querySelector("#clear_all");
@@ -114,6 +114,24 @@ let isOpen = false;
 //   delete_Modal.style.display = "none";
 //   }
 // });
+less_span.addEventListener("click", function () {
+  comment_text.innerText = subString;
+  if ((comment_text.innerText = subString)) {
+    more_span.style.display = "block";
+    less_span.style.display = "none";
+    cmt.style.width='40% !important'  
+
+    console.log(cmt.style.width)
+  } else {
+    less_span.style.display = "none";
+    comment_text.innerText = subString;
+    more_span.style.display = "block";
+    cmt.style.width='100% !important'  
+    // console.log(comment_text.style.width)
+
+  }
+});
+
 
 switch_appearance_row_more_modal.addEventListener("click", function(){
   switch_appearance_modal.style.display = "block";
@@ -324,8 +342,17 @@ search_btn.addEventListener("click", function (e) {
   }
 });
 
-search_info_x.addEventListener("click", function () {
-  searched_account.style.display = "none";
+window.addEventListener("click", function (event){
+  if (event.target == search_Modal) {
+    search_Modal.style.display = "none";
+  }
+});
+
+search_info_x.forEach((button) => {
+  button.addEventListener("click", function () {
+      const accountDiv = button.parentElement;
+      accountDiv.style.display = "none";
+  });
 });
 
 search_clear_all.addEventListener("click", function () {

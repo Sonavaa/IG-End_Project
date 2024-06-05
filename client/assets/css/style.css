@@ -1172,7 +1172,7 @@ label:active:after {
   cursor: pointer;
 }
 .suggestion {
-  width: 384px;
+  width: 384px !important;
   height: 44px;
   display: flex;
   flex-direction: column;
@@ -1180,7 +1180,7 @@ label:active:after {
   margin-top: 40px;
 }
 .suggestion .switch-account {
-  width: 287px;
+  width: 287px !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1272,7 +1272,7 @@ label:active:after {
 }
 .suggestion .bottom {
   font-size: 12px;
-  width: 287px;
+  width: 287px !important;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1289,4 +1289,119 @@ label:active:after {
 }
 .mobile-bottom {
   display: none;
+}
+.comments {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.comment-1,
+.comment-2 {
+  display: block;
+  margin: 16px 0;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.comment-view {
+  display: flex;
+  align-items: center;
+}
+
+.comment-view .right {
+  width: 100%;
+}
+.w-100{
+  width: 100% !important;
+}
+
+.comment-view .cmt {
+  margin-left: 20px;
+}
+
+.comment-text {
+  margin-bottom: 10px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-solid.fa-heart {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fa-solid.fa-heart:hover {
+  color: #f44336;
+}
+
+.fa-solid.fa-heart.comment-like {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fa-solid.fa-heart.comment-like:hover {
+  color: #f44336;
+}
+
+.fa-regular.fa-ellipsis {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fa-regular.fa-ellipsis:hover {
+  color: #f44336;
+}
+
+.less-span,
+.more-span {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.less-span:hover,
+.more-span:hover {
+  color: #2b2b2b;
+}
+::-webkit-scrollbar {
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(19, 19, 19); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(16, 16, 16); 
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1b1b; 
+}
+.main-share{
+  display: block;
+}
+.main-share .story-slider{
+  overflow-x: scroll;
+
+
+}
+#more-span{
+  
+  margin-bottom: -9px !important;
+}
+.comment-text{
+  margin-bottom: 0 !important;
+}
+.bottom{
+  width: 28% !important;
+}
+.cm1{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
